@@ -1,0 +1,44 @@
+
+.boxs .box-item {
+    display: none;
+    animation: ease fadeIn 0.5s;
+}
+
+.boxs .active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(0.8%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.btn {
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+}
+
+.actived,
+.btn:hover {
+    background-image: url(./images/bgactive.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+}
+
+.title-item {
+    --fill-color: #000;
+    -webkit-text-stroke: 0.8px var(--fill-color);
+    color: transparent;
+    transition: 0.3s linear;
+
+}
