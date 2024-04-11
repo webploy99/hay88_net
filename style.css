@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
 .boxs .box-item {
     display: none;
     animation: ease fadeIn 0.5s;
@@ -20,11 +27,12 @@
     }
 }
 
-
 .btn {
     background-color: #e2e2e2;
     border: none;
     outline: none;
+    text-shadow: -1px -1px 0 #4f4d57, 1px -1px 0 #4f4d57, -1px 1px 0 #4f4d57, 1px 1px 0 #4f4d57, 5px 5px 10px rgba(1, 1, 1, 1);
+        color: #f2f2f2
 }
 
 .actived,
@@ -33,12 +41,4 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: yellow;
-}
-
-.title-item {
-    --fill-color: #000;
-    -webkit-text-stroke: 0.8px var(--fill-color);
-    color: transparent;
-    transition: 0.3s linear;
-
 }
