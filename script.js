@@ -1,4 +1,4 @@
-    // slider
+    //======== slider
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -16,7 +16,7 @@
         },
     });
     
-    // phone size
+    //======== phone size
     var header = document.getElementById("myDIV");
     var btns = header.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {
@@ -27,7 +27,7 @@
         });
     }
 
-    // desktop size
+    //======== desktop size
     var header = document.getElementById("mydiv");
     var btns = header.getElementsByClassName("btnn");
     for (var i = 0; i < btns.length; i++) {
@@ -38,26 +38,25 @@
         });
     }
     
-    
-    // desktop size
-    const one = document.querySelector.bind(document),
-        two =  document.querySelectorAll.bind(document);
+    //======== desktop size
+    const firstDest = document.querySelector.bind(document),
+        secondDest =  document.querySelectorAll.bind(document);
 
-    const clickContent = two ('.click-item'),
-        cardContent = two ('.card-item');
+    const clickContent = secondDest ('.click-item'),
+        cardContent = secondDest ('.card-item');
 
     clickContent.forEach((click, index) => {
         const carded = cardContent[index]
         click.onclick = function () {
-            one('.click-item.active').classList.remove('active')
-            one('.card-item.active').classList.remove('active')
+            firstDest('.click-item.active').classList.remove('active')
+            firstDest('.card-item.active').classList.remove('active')
             this.classList.add ('active')
             carded.classList.add ('active')
         }
     })
 
 
-    // phone size
+    //======== phone size
     const $ = document.querySelector.bind(document),
         $$ = document.querySelectorAll.bind(document);
 
