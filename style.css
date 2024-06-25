@@ -50,14 +50,13 @@ body{
 }
 
 
-
-
+/* btn button */
 .btn {
     background-color: #e2e2e2;
     border: none;
     outline: none;
     text-shadow: -1px -1px 0 #4f4d57, 1px -1px 0 #4f4d57, -1px 1px 0 #4f4d57, 1px 1px 0 #4f4d57, 5px 5px 10px rgba(1, 1, 1, 1);
-        color: #f2f2f2
+    color: #f2f2f2
 }
 .btnn {
     background-color: #e2e2e2;
